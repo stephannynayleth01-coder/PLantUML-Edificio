@@ -1,0 +1,9 @@
+@startuml
+abstract class Personaje
+class Guerrero
+class Inventario
+class Item
+Personaje <|-- Guerrero
+Personaje *-- Inventario
+Inventario o-- Item
+@enduml
