@@ -1,0 +1,8 @@
+@startuml
+object "aragorn : Guerrero" as g {
+  nombre = "Aragorn"
+  vida = 120
+}
+object "espada : Item" as e
+g --> e
+@enduml
