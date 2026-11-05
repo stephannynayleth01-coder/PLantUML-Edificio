@@ -1,0 +1,7 @@
+@startuml
+usecase "Iniciar combate" as UC2
+usecase "Validar equipo" as V
+usecase "Usar poción" as P
+UC2 .> V : <<include>>
+P .> UC2 : <<extend>>
+@enduml
