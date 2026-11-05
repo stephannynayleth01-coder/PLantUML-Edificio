@@ -1,0 +1,7 @@
+@startuml 
+' la vida nunca baja de 0 
+class Personaje 
+note right of Personaje   
+vida entre 0 y vidaMaxima 
+end note 
+@enduml
