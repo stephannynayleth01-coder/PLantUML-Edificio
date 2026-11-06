@@ -1,0 +1,9 @@
+@startuml
+component "Vista" as V
+component "Servicio" as S
+component "Repositorio" as R
+interface "API REST" as API
+V --> API
+API - S
+S --> R
+@enduml
