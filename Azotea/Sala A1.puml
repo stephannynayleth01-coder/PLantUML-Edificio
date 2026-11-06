@@ -1,0 +1,9 @@
+@startuml
+actor Jugador
+Jugador -> Arena : iniciarCombate(guerrero, monstruo)
+loop ronda
+  Arena -> Guerrero : atacar(monstruo)
+  Arena -> Monstruo : atacar(guerrero)
+end
+Arena --> Jugador : ganador
+@enduml
