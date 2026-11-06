@@ -1,0 +1,10 @@
+@startuml
+[*] --> EnReposo
+state "En combate" as EC {
+  [*] --> Atacando
+  Atacando --> Defendiendo : turnoRival
+  Defendiendo --> Atacando : turnoPropio
+}
+EnReposo --> EC : entrarArena
+EC --> EnReposo : finCombate
+@enduml
