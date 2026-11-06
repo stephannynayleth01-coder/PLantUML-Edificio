@@ -1,0 +1,13 @@
+@startuml
+entity Personaje {
+  * id : INT <<PK>>
+  --
+  nombre : VARCHAR(50)
+}
+entity Item {
+  * id : INT <<PK>>
+  --
+  personaje_id : INT <<FK>>
+}
+Personaje ||--o{ Item
+@enduml
