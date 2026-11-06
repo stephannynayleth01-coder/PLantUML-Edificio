@@ -1,0 +1,9 @@
+@startuml
+node "PC del estudiante" {
+  artifact "rpg-manager.jar" as JAR
+}
+node "Servidor de la U" {
+  database "MariaDB" as DB
+}
+JAR --> DB : JDBC
+@enduml
