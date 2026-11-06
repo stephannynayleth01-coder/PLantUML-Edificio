@@ -1,0 +1,10 @@
+@startuml
+!include <C4/C4_Container>
+Person(jugador, "Jugador")
+System_Boundary(rpg, "RPG Manager") {
+  Container(web, "App web", "Flask")
+  ContainerDb(db, "Base de datos", "MariaDB")
+}
+Rel(jugador, web, "Juega en")
+Rel(web, db, "Lee y escribe")
+@enduml
